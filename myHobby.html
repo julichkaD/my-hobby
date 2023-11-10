@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handmade Candles 🕯️</title>
+    <style>
+        body {
+            background-color: #79c2d0;
+        }
+
+        .img-candles {
+            width: 100%;
+            border-radius: 10px;
+            transition: all 200ms ease-in-out;
+        }
+
+        .img-candles:hover {
+            transform: scale(1.3);
+        }
+
+        h1 {
+            color: #5585b5;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 40px;
+            font-family: Arial, Helvetica;
+        }
+
+        h1:hover {
+            color: plum;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.3;
+        }
+
+        a {
+            color: rgb(5, 199, 199);
+            font-size: 22px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        a:hover {
+            color: navy;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #5585b5;
+        }
+
+        strong:hover {
+            color: plum;
+        }
+
+        footer {
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .button-toggle {
+            display: block;
+            margin: 10px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #bbe4e9;
+            background-color: #5585b5;
+            color: azure;
+        }
+
+        .container {
+            display: grid;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #c0eef4;
+            border-radius: 10px;
+        }
+
+        .candle-main-picture {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .classes-button {
+            width: 60%;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 10px 10px;
+            border: 1px solid #5585b5;
+            border-radius: 10px;
+            background-color: #5585b5;
+            color: azure;
+        }
+
+        .news {
+            text-align: center;
+        }
+
+        .dark {
+            background: linear-gradient(109.6deg,
+                    rgb(0, 0, 0) 11.2%,
+                    rgb(11, 132, 145) 91.1%);
+            color: #c0eef4;
+        }
+
+        .dark .container {
+            background: linear-gradient(109.6deg,
+                    rgb(0, 0, 0) 11.2%,
+                    rgb(11, 132, 145) 91.1%);
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button-toggle">Change Theme 💥</button>
+    <div class="container">
+        <h1>Handmade Candles 🕯️</h1>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/327/original/brittani-burns-JbLuAdWm4tg-unsplash.jpg?1697210594"
+            alt="colorful handmade candles" class="candle-main-picture" />
+        <p>
+            <strong>🕯️Handmade candles</strong> are candles that are crafted and
+            created by hand instead of being mass-produced. They are made using
+            various techniques and materials, such as wax, wicks, fragrances, and
+            dyes. Handmade candle makers often use traditional methods and artisanal
+            techniques to create unique and artistic candles.
+        </p>
+        <p>
+            🕯️The process of making handmade candles involves melting the wax,
+            adding fragrances and dyes if desired, pouring the melted wax into molds
+            or containers, and inserting the wicks. The candles are then allowed to
+            cool and harden before they are ready to be used or sold.
+        </p>
+        <p>
+            🕯️Handmade candles offer a personal touch and can be customized in terms
+            of scent, color, shape, and design. They are often made with natural and
+            high-quality ingredients, making them more environmentally friendly and
+            healthier compared to commercially manufactured candles, which may
+            contain synthetic materials and chemicals.
+        </p>
+        <div class="grid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/331/original/woman-taking-moisturizer-apply-it-her-face-before-taking-bath.jpg?1697210714"
+                alt="handmade candles" class="img-candles" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/326/original/daiga-ellaby-JDsXQMAx-UY-unsplash.jpg?1697210584"
+                alt="handmade candles" class="img-candles" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/324/original/photo-1570823635306-250abb06d4b3.jpeg?1697210026"
+                alt="handmade candles" class="img-candles" />
+
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/348/original/candle_dishes.jpg?1697215285"
+                alt="handmade candles" class="img-candles" />
+        </div>
+        <br />
+        <p class="news">
+            <strong>AMAZING NEWS 😍</strong> You can turn your hobby into Money
+        </p>
+        <a href="https://logo.com/blog/candle-business-logo" target="blank">How to start a Candle Business 💰</a><br />
+        <button class="classes-button">
+            Sign Up for a Free Handmade Candles Class🕯️
+        </button>
+    </div>
+    <footer>Coded by Julichka 💚</footer>
+    <script>
+        let buttonToggle = document.querySelector(".button-toggle");
+        buttonToggle.addEventListener("click", changeBgColor);
+
+        function changeBgColor() {
+            let body = document.querySelector("body");
+            body.classList.toggle("dark");
+        }
+
+        let classesButton = document.querySelector(".classes-button");
+        classesButton.addEventListener("click", signUp);
+
+        function signUp() {
+            let name = prompt("What is your name?💥");
+            let email = prompt("What is your email address📧");
+            let age = +prompt("What is your age?✨");
+
+            if (age >= 18) {
+                alert(
+                    `We're looking forward to having you in our class ${name} 😍. Thank you for signing up!`
+                );
+            } else {
+                alert(
+                    `Sorry, dear ${name}.\nYou must be 18 years old to sign up for the free class☹️`
+                );
+            }
+        }
+    </script>
+</body>
+
+</html>
